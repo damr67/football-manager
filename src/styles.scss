@@ -1,0 +1,90 @@
+$main: #2234be;
+$white: white;
+$font: rgba(221, 221, 221, 0.8);
+$danger: #ea3a3a;
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  background: $main;
+  color: $white;
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+
+  main {
+    width: 90%;
+    padding: 1em 5vw;
+  }
+
+  button {
+    background: transparent;
+    border: 1px solid $font;
+    color: $font;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 0.7rem;
+    margin: 0 0.2rem;
+    padding: 0.6em 1.3em;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: $white;
+    color: $main;
+    transition: all ease-in-out 250ms;
+  }
+
+  .btn-danger {
+    border: 2px solid;
+    border-color: $danger;
+    color: $danger;
+  }
+
+  .container {
+    text-align: center;
+    border: 1px solid $white;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    min-height: 10vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    img {
+      max-width: 6em;
+      height: 6em;
+      background-size: cover;
+      border-radius: 50% 50% 50% 50%;
+    }
+
+    .players {
+      margin: 0 3.2rem;
+      padding: 1rem 0;
+      display: inline-block;
+    }
+  }
+}
